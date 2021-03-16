@@ -38,6 +38,9 @@
                                 <state key="normal" title="じゃんけんをする！">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="shuffleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pU6-AB-D9Q"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -55,10 +58,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WaW-LR-GsF" secondAttribute="trailing" id="vSJ-p5-Y8c"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answerImageView" destination="WaW-LR-GsF" id="W7m-xL-aRf"/>
+                        <outlet property="answerLabel" destination="udA-yF-cgv" id="Dob-yw-XzN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="480" y="125"/>
+            <point key="canvasLocation" x="-394" y="135"/>
         </scene>
     </scenes>
     <resources>
